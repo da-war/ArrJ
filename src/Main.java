@@ -1,9 +1,12 @@
 import java.util.Arrays;
 
+
 public class Main {
     public static void main(String[] args) {
-        int [] numbers={1,2,3,4,5};
-        System.out.println(numbers.length);
-        System.out.println(Arrays.toString(numbers));
+        MyArray numbers=new MyArray(2);
+        numbers.insert(0,1);
+        numbers.insert(1,2);
+        numbers.print();
+        numbers.displayArray();
     }
 }
