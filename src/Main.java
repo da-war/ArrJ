@@ -1,15 +1,17 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 
 public class Main {
     public static void main(String[] args) {
-        MyArray numbers=new MyArray(4);
-        numbers.insert(0,1);
-        numbers.insert(1,2);
-        numbers.insert(2,3);
-        numbers.insert(3,4);
-        numbers.displayArray();
-        numbers.deleteItem(0);
-        numbers.displayArray();
+        ArrayList<Integer> list=new ArrayList<>();
+        list.add(10);
+        list.add(20);
+        list.add(30);
+        System.out.println(list);
+        int index= list.indexOf(20);
+        list.toArray();
+        System.out.println(list);
+        System.out.println(index);
     }
 }
